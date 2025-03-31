@@ -1,0 +1,82 @@
+/* Apply existing dark theme */
+body {
+    background-color: rgb(28, 24, 24);
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Login container */
+.login-container {
+    background: rgb(45, 40, 40);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+/* Input field styling */
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: antiquewhite;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(69, 68, 68);
+    background: rgb(36, 30, 30);
+    color: antiquewhite;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Login button */
+button {
+    width: 100%;
+    padding: 12px;
+    background: antiquewhite;
+    border: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: rgb(243, 221, 193);
+    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Signup link */
+.signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: antiquewhite;
+}
+
+.signup-link a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+    color: rgb(243, 221, 193);
+}

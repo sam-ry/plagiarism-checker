@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Similarity Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+<body>
+    <h2>Similarity Results</h2>
+    
+
+    <table class="sim_table">
+        <tr class="head">
+            <th>File 1</th>
+            <th>File 2</th>
+            <th>Similarity (%)</th>
+        </tr>
+        {% for result in results %}
+        <tr>
+            <td>{{ result.file1 }}</td>
+            <td>{{ result.file2 }}</td>
+            <td>{{ result.similarity }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <div class="dld-report"><a href="/download_report">Download CSV Report</a><br> <br></div>
+    
+    
+    <h2>Heatmap Visualization</h2>
+    <div class="heatmap-vis"><img src="/download_heatmap" alt="Similarity Heatmap"></div>
+    <div class="dld-heatmap"><a href="/download_heatmap">Download Similarity Heatmap</a><br></div>
+    
+    <div class="back-btn"><button onclick="window.location.href='/'" class="btn_goback">Upload more PDFs</button></div>
+    <!-- <h3>Download Reports</h3> -->
+
+</body>
+</html>

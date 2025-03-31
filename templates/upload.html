@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload PDFs for Comparision</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_home.css') }}">
+</head>
+<body>
+    <h1>Upload PDFs for similarity check</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+
+        <div class="upload_methods">
+            <div class="choose_files">
+                <input type="file" name = 'files' multiple> 
+            </div>
+            <h3>Or</h3>
+            <div class="folder_path">
+                <label for="">Folder path</label>
+            <input type="text" name = 'folder_path'> 
+            </div>
+        </div>
+
+        <div class="btn">
+            <button type="submit">Upload and Compare</button>
+        </div>
+        
+        
+    </form>
+    <div class="logout-container">
+        <form action="{{ url_for('logout') }}" method="GET">
+            <button type="submit" class="logout-btn">Logout</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(28, 24, 24);
+    color: antiquewhite;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h1{
+    /* background-color: rgb(40, 30, 30); */
+    border-bottom: rgb(79, 61, 61) 1px solid;
+    padding: 20px;
+}
+
+.choose_files, .folder_path{
+    border: 2px rgb(109, 104, 97) solid;
+    border-radius: 15px;
+    width: 300px;
+    padding: 40px;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px 50px rgb(41, 38, 38);
+}
+
+.upload_methods{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+h3{
+    color: rgb(111, 110, 107);
+    margin: 0;
+}
+
+button{
+    padding: 20px 40px 20px 40px;
+    background-color:antiquewhite;
+    border-radius: 40px;
+    color: black;
+    font-weight: bolder;
+    font-size: medium;
+}
+
+.btn{
+    display: flex;
+    justify-content: center; 
+    margin: 20px; 
+}
+
+button:hover{
+    background-color: rgb(28, 24, 24);
+    color: antiquewhite;
+    border: 2px rgb(86, 79, 71) solid;
+    /* border: 0; */
+    box-shadow: 1px 1px 30px rgb(68, 64, 59);
+}
+
+.choose_files input{
+    display: flex;
+    justify-content: center;
+}
+
+label{
+    margin: 0px 10px;
+}
+
+.logout-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logout-btn {
+    background-color: #dc3545; /* Red button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+}
