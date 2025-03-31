@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(28, 24, 24);
+    color: antiquewhite;
+    font-family:Arial, Helvetica, sans-serif;
+}
+table{
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    padding: 15px;
+    border-collapse: separate; /* Change from collapse to separate */
+    border-spacing: 0; /* Remove extra spacing */
+    border-radius: 30px;
+    /* border: 1px solid rgb(69, 68, 68); */
+    margin: 30px;
+}
+table th{
+    background-color: rgb(45, 40, 40);
+    padding: 15px;
+}
+.head{
+    font-weight: bold;
+}
+table tr:nth-of-type(odd){
+    background-color: rgb(36, 30, 30);
+
+}
+table td{
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px rgb(44, 38, 38) solid;
+    min-width: 200px;
+}
+
+.back-btn{
+    display: flex;
+    justify-content:center;
+    padding: 20px;
+}
+
+.btn_goback{
+    padding: 20px 40px 20px 40px;
+    background-color:antiquewhite;
+    border-radius: 40px;
+    color: black;
+    font-weight: bolder;
+    font-size: medium;  
+}
+
+h2{
+    /* background-color: rgb(40, 30, 30); */
+    border-bottom: rgb(79, 61, 61) 1px solid;
+    padding: 20px;
+}
+
+.dld-report, .dld-heatmap{
+    display: flex;
+    justify-content: center;
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+    background-color:rgb(243, 221, 193);
+    border-radius: 40px;
+    font-weight: bolder;
+    width: auto;
+    text-align: center;
+    padding: 20px 40px 20px 40px;
+    border: 2px solid;
+    /* margin: 70px; */
+}
+
+a:hover{
+    background-color: rgb(28, 24, 24);
+    color: antiquewhite;
+    border: 2px rgb(86, 79, 71) solid;
+    /* border: 0; */
+    box-shadow: 1px 1px 30px rgb(68, 64, 59);
+}
+
+.heatmap-vis{
+    display: flex;
+    justify-content: center;
+    /* max-width: 500px; */
+    margin: 30px;
+    /* max-height: 500px; */
+}
